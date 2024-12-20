@@ -11,9 +11,20 @@ int removeKey(int arr[], int n, int key) {
 }
 
 int main() {
-    int arr[] = {1, 2, 3, 4, 3, 5, 3};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    int key = 3;
+    int n, key;
+
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+
+    printf("Enter %d elements of the array: \n", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the key to remove: ");
+    scanf("%d", &key);
 
     printf("Original array: ");
     for (int i = 0; i < n; i++) {
@@ -31,5 +42,3 @@ int main() {
 
     return 0;
 }
-
-
